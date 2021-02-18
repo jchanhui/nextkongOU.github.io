@@ -1,6 +1,6 @@
 ---
-title: Phone
-category: Contact Syncing
+title: 정찬희2
+category: CSM
 order: 2
 ---
 
