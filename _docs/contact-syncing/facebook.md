@@ -1,6 +1,6 @@
 ---
-title: Facebook
-category: Contact Syncing
+title: 정찬희
+category: CSM
 order: 1
 ---
 
