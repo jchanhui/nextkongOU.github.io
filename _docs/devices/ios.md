@@ -1,6 +1,6 @@
 ---
-title: iOS
-category: Devices
+title: 아무개
+category: SA
 order: 1
 ---
 
