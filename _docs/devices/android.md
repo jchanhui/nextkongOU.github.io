@@ -1,6 +1,6 @@
 ---
-title: Android
-category: Devices
+title: 홍길동
+category: SA
 order: 2
 ---
 
