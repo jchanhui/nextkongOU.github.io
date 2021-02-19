@@ -48,11 +48,12 @@
 				</ul>
 
 				<ul>
+					{% grouped.tostring %}
 					{% assign grouped = site.docs | group_by: 'category' %}
 					{% for group in grouped %}
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
 							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }} ( {{items.size}} ) ( {{ group.number }} )  ( {{ group.count }} )  ( {{group}}  )</a>
+							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }} ( {{items.size}} ) ( {{ group.number }} )  ( {{ group.count }} )</a>
 							<ul>
 								{% for item in items %}
 									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} </a></li>
