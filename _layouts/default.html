@@ -50,9 +50,10 @@
 				<ul>
 					{% assign grouped = site.docs | group_by: 'category' %}
 					{% for group in grouped %}
-						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
+						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}" onClick="test(this);">
 							{% assign items = group.items | sort: 'order' %}
-							<a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }} ( {{items.size}} ) </a>
+							<!-- <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }} ( {{items.size}} ) </a> -->
+							{{ group.name }} ( {{items.size}} )
 							<ul style ="display:none;">
 								{% for item in items %}
 									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }} </a></li>
@@ -85,6 +86,12 @@
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
 			});
+			
+			fuction test(this){
+			alert(1111);
+				
+			}
+			
 		</script>
 	</body>
 </html>
