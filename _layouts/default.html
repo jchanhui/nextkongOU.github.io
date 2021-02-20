@@ -54,7 +54,7 @@
 							{% assign items = group.items | sort: 'order' %}
 							<!-- <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }} ( {{items.size}} ) </a> -->
 								<a> {{ group.name }} ( {{items.size}} ) </a>
-							<ul style ="display:none;">
+							<ul id="{{ group.name }}" style ="display:none;">
 								{% for item in items %}
 									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}?test=SA">{{ item.title }} </a></li>
 								{% endfor %}
@@ -87,6 +87,15 @@
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {
 				document.body.classList.toggle("nav-open");
+			});
+			
+			$(documnet).ready(function(){
+			
+				$.urlParm=function(name){
+					var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+					alert(results);
+				}
+			
 			});
 			
 			function test(param){
