@@ -91,10 +91,11 @@
 			
 			function test(param){
 			
-				alert($(param).children('ul').css("display"));
-			
-			$(param).children('ul').css("display","block");
-				
+				if($(param).children('ul').css("display") == "none"){
+					$(param).children('ul').css("display","block");   
+				}else{
+					$(param).children('ul').css("display","none");   
+				}
 			}
 			
 		</script>
