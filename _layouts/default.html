@@ -93,6 +93,8 @@
 				var url = location.href;
 				var parameters = (url.slice(url.indexOf('#') + 1, url.length));
 				parameters = parameters.replace(/%20/gi,' ');
+				
+				alert(parameters);
 				$('#'+parameters).css("display","block");
 				
 			});
