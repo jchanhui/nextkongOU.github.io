@@ -48,7 +48,6 @@
 				</ul>
 
 				<ul>
-					{% grouped.tostring %}
 					{% assign grouped = site.docs | group_by: 'category' %}
 					{% for group in grouped %}
 						<li class="nav-item top-level {% if group.name == page.category %}current{% endif %}">
