@@ -92,7 +92,7 @@
 			$(document).ready(function(){
 				var url = location.href;
 				var parameters = (url.slice(url.indexOf('#') + 1, url.length));
-				alert(parameters);
+				parameters = parameters.replace('%20',' ');
 				$('#'+parameters).css("display","block");
 				
 			});
