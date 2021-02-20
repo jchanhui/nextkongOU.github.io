@@ -92,7 +92,7 @@
 			$(document).ready(function(){
 				var url = location.href;
 				var parameters = (url.slice(url.indexOf('#') + 1, url.length));
-				parameters = parameters.replace('%20',' ');
+				parameters = parameters.replace(/%20/gi,' ');
 				$('#'+parameters).css("display","block");
 				
 			});
