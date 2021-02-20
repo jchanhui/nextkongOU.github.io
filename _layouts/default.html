@@ -54,9 +54,9 @@
 							{% assign items = group.items | sort: 'order' %}
 							<!-- <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }} ( {{items.size}} ) </a> -->
 								<a> {{ group.name }} ( {{items.size}} ) </a>
-							<ul id="{{ group.name }}" style ="display:none;">
+							<ul id="menu{{ group.status.count }}" style ="display:none;">
 								{% for item in items %}
-									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}#{{ group.name }}">{{ item.title }} </a></li>
+									<li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}#menu{{ group.status.count }}">{{ item.title }} </a></li>
 								{% endfor %}
 							</ul>
 						</li>
