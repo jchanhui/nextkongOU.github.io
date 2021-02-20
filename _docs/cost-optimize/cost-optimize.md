@@ -1,6 +1,6 @@
 ---
 title: Reserved Instance
-category: Cost Optimize
+category: Cost_Optimize
 order: 1
 ---
 
