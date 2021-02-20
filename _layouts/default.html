@@ -90,12 +90,14 @@
 			});
 			
 			$(document).ready(function(){
-				alert($.urlParm);
-				$.urlParm=function(name){
-					var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-					alert(results);
-				}
-			
+				alert(location.href);
+				
+				var url = location.href;
+				
+				var parameters = (url.slice(url.indexOf('?') + 1, url.length)).split;
+				
+				alert(parameters);
+				
 			});
 			
 			function test(param){
