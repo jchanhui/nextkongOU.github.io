@@ -10,9 +10,9 @@ show_full_navigation: true
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Product documentation template for Jekyll.
-author:
+author:Saltware.co.,ltd.
   name:
-  email:
+  email:aws_consult@saltware.co.kr
   twitter: # twitter username without the @ symbol
 social:
   name: Edition Template
