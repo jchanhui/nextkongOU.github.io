@@ -15,9 +15,9 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Edition Template
+  name: FitCloud 기술 블로그
   links:
-    - https://github.com/CloudCannon/edition-jekyll-template
+    - https://fitcloud.co.kr
 
 # -----
 # Build
